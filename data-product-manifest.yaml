@@ -1,0 +1,46 @@
+version: 0.0.2
+jobId: "286"
+jobName: Test23
+jobType: Source Aligned Data Product
+alias: ""
+discoveryPort:
+  name: Test23
+inputPorts:
+  - alias: Test_Data_Set_with_Domain_1
+    isDynamic: true
+    path: s3://test###date###
+    optional:
+      persistDataFrame: false
+      advanceOptions:
+        delimiter: "|"
+      enableDataReconciliation: false
+      enforceSchema: false
+      connection: Test Connection with Domain
+      dataSetUrn: urn:dv:dataset:7f0e51ed-c13e-4590-af62-a5aa8d0ec708
+    type: inputDelimited
+productState:
+  isDynamic: true
+  alias: ""
+  retentionVersions: ""
+  logicalSchema: ""
+  stateStoreType: saveTableDB
+  isProfilingEnabled: false
+  connection: ""
+  tableName: ""
+  optional:
+    persistDataFrame: false
+    addRunIdColumn: false
+    enableDataReconciliation: false
+    enforceSchema: false
+  refreshInterval: None
+transformation:
+  - alias: Sagemaker_1
+    type: ""
+    description: test
+    sequenceNo: 2
+controlPort:
+  dataQualityRules: {}
+outputPort:
+  subscriptionChannels:
+    - channelType: Postgres
+      queryType: SQL
