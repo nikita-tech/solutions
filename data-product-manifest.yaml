@@ -1,10 +1,10 @@
-version: 0.0.7
+version: 0.0.8
 jobId: "286"
-jobName: Test23
+jobName: Nikita Test for sagemaker
 jobType: Source Aligned Data Product
-alias: abc
+alias: nikita
 discoveryPort:
-  name: Test23
+  name: Nikita Test for sagemaker
 inputPorts:
   - alias: Test_Data_Set_with_Domain_1
     isDynamic: true
@@ -20,7 +20,7 @@ inputPorts:
     type: inputDelimited
 productState:
   isDynamic: true
-  alias: abc
+  alias: nikita
   retentionVersions: ""
   logicalSchema:
     properties:
