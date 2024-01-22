@@ -1,4 +1,4 @@
-version: 0.0.9
+version: 0.0.10
 jobId: "286"
 jobName: Nikita Test for sagemaker
 jobType: Source Aligned Data Product
@@ -44,6 +44,11 @@ transformation:
     description: test
     pipelineName: test
     sequenceNo: 2
+    optional:
+      persistDataFrame: false
+      input_param:
+        abc: bjh
+        xyz: hbjhh
     references:
       - alias: Test_Data_Set_with_Domain_1
         sqlReference: Test_Data_Set_with_Domain_1
