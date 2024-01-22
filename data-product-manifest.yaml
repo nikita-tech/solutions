@@ -1,4 +1,4 @@
-version: 0.0.4
+version: 0.0.6
 jobId: "286"
 jobName: Test23
 jobType: Source Aligned Data Product
@@ -35,9 +35,13 @@ productState:
   refreshInterval: None
 transformation:
   - alias: Sagemaker_1
-    type: ""
+    type: customAWSSagemaker
     description: test
+    pipelineName: test
     sequenceNo: 2
+    references:
+      - alias: Test_Data_Set_with_Domain_1
+        sqlReference: Test_Data_Set_with_Domain_1
 controlPort:
   dataQualityRules: {}
 outputPort:
